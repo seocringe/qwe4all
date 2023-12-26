@@ -1,30 +1,93 @@
-pytz
-requests
-python-dotenv
+# Enhanced python interpreter
+ipython
 
-ipython==8.5.0  # enhanced python interpreter
+# Django essentials
+django
+django-cors-headers
+django-debug-toolbar
+whitenoise
 
-# Django
-django==3.2.9
-django-cors-headers==3.13.0
-django-debug-toolbar==3.6.0
-whitenoise==6.2.0  # for serving static files
+# ASGI server requirements
+gunicorn
+uvicorn
 
-# Django 3.0 async requirements
-gunicorn==20.1.0
-uvicorn==0.18.3
+# Database adapters
+psycopg2-binary
+dj-database-url
 
-# Databases
-psycopg2-binary==2.9.3
-dj-database-url==1.0.0
+# Distributed async tasks management
+celery
+redis
+django-celery-beat
 
-# Distributed async tasks
-celery==5.2.7
-redis==4.3.4
-django-celery-beat==2.3.0
+# Telegram bot handling
+python-telegram-bot
 
-# Telegram
-python-telegram-bot==13.15  # last sync version
-
-# monitoring
-# sentry-sdk
+# Additional requirements, grouped by their purpose or removes not directly declared dependencies
+amqp
+anyio
+APScheduler
+asgiref
+asttokens
+async-timeout
+backcall
+billiard
+cachetools
+certifi
+charset-normalizer
+click
+click-didyoumean
+click-plugins
+click-repl
+comm
+debugpy
+decorator
+Deprecated
+django-timezone-field
+executing
+filelock
+fsspec
+h11
+httpcore
+httpx
+idna
+ipykernel
+jedi
+Jinja2
+jupyter_client
+jupyter_core
+kombu
+MarkupSafe
+matplotlib-inline
+mpmath
+nest-asyncio
+networkx
+packaging
+parso
+pexpect
+pickleshare
+platformdirs
+prompt-toolkit
+psutil
+ptyprocess
+pure-eval
+Pygments
+python-crontab
+python-dateutil
+pyzmq
+six
+sniffio
+sqlparse
+stack-data
+sympy
+torch
+torchaudio
+tornado
+traitlets
+typing_extensions
+tzdata
+tzlocal
+urllib3
+vine
+wcwidth
+wrapt

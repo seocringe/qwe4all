@@ -1,3 +1,7 @@
+"""
+This module provides a function to run a bot in polling mode.
+"""
+
 from telegram.ext import Updater
 from dtb.settings import TELEGRAM_TOKEN
 from tgbot.dispatcher import setup_dispatcher
@@ -11,7 +15,6 @@ class SpecificException(Exception):
 
 def run_polling(tg_token=None):
     """Run bot in polling mode."""
-    # Use the provided token or fallback to the one from settings
     if tg_token is None:
         tg_token = TELEGRAM_TOKEN
 
@@ -19,8 +22,8 @@ def run_polling(tg_token=None):
         updater = Updater(token=str(tg_token), use_context=True)
         setup_dispatcher(updater.dispatcher)
         print(
-            "Polling of 'https://t.me/" 
-            + updater.bot.get_me()['username'] 
+            "Polling of 'https://t.me/"
+            + updater.bot.get_me()["username"].strip()
             + "' has started"
         )
         updater.start_polling()
